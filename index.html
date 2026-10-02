@@ -9,27 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Archivo:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         
-        <section class="header">
-
-          
-            <h2 class="brand-name">Malodac <span>Catering Equipments</span></h2>
-
-            <div class="nav-list">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Services</a>
-                <a href="#" class="nav-link">Products</a>
-                <a href="#" class="nav-link">Contact</a>
-            </div>
-
-            <button class="sign-up-btn"> <i class="fa-solid fa-user"></i> Sign Up</button>
-        </section>
+    <header class="header">
+        <h2 class="brand-name">Malodac <span>Catering Equipments</span></h2>
+    
+        <div class="nav-list" id="nav-list">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">Products</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false"
+            aria-controls="nav-list">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
 
         <section class="hero">
             <div class="hero-left">
@@ -145,7 +147,7 @@
                     <h4>Catering Services</h4>
                     <p>durable tools for large scale food service</p>
                 </div>
-                <div class="kitchen">
+                <div class="corporate">
                    <img src="images/kitchenn.jpg" alt="">
                     <h4>Corporate Kitchens</h4>
                     <p>Kitchen solutions for offices, hospitals and institutions</p>
@@ -182,11 +184,12 @@
         
             </section>
 
-            <section class="footer">
+        <footer class="site-footer">
+            <div class="footer-top">
                 <div class="footer-contact">
-                    <h2 class="brand-name">Malodac <span>Catering Equipments</span><h2>
-                    <address> <i class="fa-solid fa-location-dot"></i> 18, Babatunde Street, <br>Ikoyi, Lagos State.</address>
-                    <p> <i class="fa-solid fa-phone"></i> Phone: +234 99 999 999 99</p>
+                    <h2 class="brand-name">Malodac <span>Catering Equipments</span></h2>
+                    <address><i class="fa-solid fa-location-dot"></i> 18, Babatunde Street, <br>Ikoyi, Lagos State.</address>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +234 99 999 999 99</p>
                     <div class="social">
                         <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                         <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
@@ -194,14 +197,14 @@
                         <div class="tiktok"><i class="fa-brands fa-tiktok"></i></div>
                     </div>
                 </div>
-                
+        
                 <div class="account">
                     <h3>My Account</h3>
                     <a href="">Orders</a>
                     <a href="">Dashboard</a>
                     <a href="">Address</a>
                 </div>
-                
+        
                 <div class="policies">
                     <h3>Policies</h3>
                     <a href="">Privacy Policy</a>
@@ -210,19 +213,21 @@
                     <a href="">Content Policy</a>
                     <a href="">FAQ</a>
                 </div>
-
+        
                 <div class="customer">
                     <h3>Customer Service</h3>
                     <a href="">About Us</a>
                     <a href="">Delivery Information</a>
                     <a href="">Privacy Policy</a>
                 </div>
-            </section>
-
-            <footer>
+            </div>
+        
+            <div class="footer-bottom">
                 <p>&copy; 2026 Malodac Catering Equipments. All rights reserved.</p>
-            </footer>
+            </div>
+        </footer>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

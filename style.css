@@ -9,7 +9,8 @@ html{
     font-size: 62.5%;
 }
 
-
+/* DESKTOP DEFAULT */
+   /* Header */
 .header{
     display: flex;
     justify-content: space-between;
@@ -60,22 +61,7 @@ html{
     width: 100%;
 }
 
-.sign-up-btn{
-    background-color: #A32F20;
-    padding: 1.5rem 3rem;
-    border-radius: 3rem;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.2s ;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.sign-up-btn:hover{
-    transform: scale(1.1);
-}
+ /* HERO  */
 
 .hero{
     display: flex;
@@ -101,7 +87,7 @@ html{
 
 .hero-paragraph{
     font-size: 3rem;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem 0;
 }
 
 .hero-btns{
@@ -116,7 +102,6 @@ html{
     text-transform: uppercase;
     border-radius: 3rem;
     font-weight: 600;
-    transition: background-color .2s;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -128,13 +113,14 @@ html{
 .browse-products{
     background-color: #A32F20;
     color: #fff;
-    padding: 1.5rem 3rem;
+    padding: 2rem 3rem;
+    transition: background-color .2s;
 }
 
 .contact-us{
     background-color: transparent;
     color: #000;
-    padding: 1.3rem 3rem;
+    padding: 1.8rem 3rem;
     border: 0.2rem solid #000;
     transition: all 0.2s;
 }
@@ -147,7 +133,7 @@ html{
   background-color: #20BA5A;
   border-color: #20BA5A;
   color: #fff;
- box-shadow: 0 4px 12px rgba(32, 186, 90, 0.4);
+  box-shadow: 0 4px 12px rgba(32, 186, 90, 0.4);
 }
 
 .hero-right {
@@ -171,6 +157,7 @@ html{
             black 30%,
             black 100%);
 }
+ /* -----Features Strip------ */
 
 .testimonials{
     background-color: #fdf8f1;
@@ -181,8 +168,7 @@ html{
     border-radius: 1rem;
     width: 80%;
     transform: translateY(-1.5rem);
-    justify-self: center;
-    
+    margin: 0 auto;
 }
 
 .testimonials h3{
@@ -207,6 +193,7 @@ html{
     margin-right: 2rem;
 }
 
+/* ---------- Categories ---------- */
 .products{
     padding: 1.4rem 6rem ;
     min-height: 40vh;
@@ -285,7 +272,7 @@ html{
     background: #474646;
     color: #fff;
 }
-
+ /* ---------- Who we serve ---------- */
 .about{
     padding: 6rem;  
     background: linear-gradient(to bottom, #fbf7fb 50%, #ffffff 100%);
@@ -322,7 +309,7 @@ html{
 .restaurants,
 .hotels,
 .catering,
-.kitchen{
+.corporate{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,7 +333,7 @@ html{
     border: 0.1rem solid #14be4f;
     border-radius: 50%;
 }
-
+/* ---------- CTA ---------- */
 .cta{
     display: flex;
     align-items: center;
@@ -362,7 +349,6 @@ html{
     height: 100%;
     width: 50%;
     flex-shrink: 0;
-    height: 100%;
 }
 
 .cta-images img{
@@ -449,11 +435,12 @@ html{
 
 .cta-buttons a{
     text-decoration: none;
-    color: #8F291D;;
+    color: #8F291D;
     border: 0.15rem solid #8F291D;
     padding: 1.2rem 2.5rem;
     border-radius: 3rem;
     transition: all 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cta-buttons a:hover {
@@ -461,60 +448,72 @@ html{
     color: #fff;
 }
 
-.footer{
-    padding: 10rem 6rem ;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.8rem;
-}
-.footer h2{
-    padding-bottom: 2rem;
+
+.site-footer {
+    color: #000;
 }
 
-.footer h2 span{
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 6rem;
+    font-size: 1.8rem;
+}
+
+.footer-top h2 {
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.footer-top h2 span {
     font-size: 1.8rem;
     display: block;
-    color: black;
+    color: #000;
     letter-spacing: 0;
 }
 
-address,
-.footer p{
+.footer-top address,
+.footer-top p {
     margin-bottom: 2rem;
     font-weight: 100;
     font-size: 1.8rem;
 }
 
-.footer .social{
+.footer-top .social {
     display: flex;
     gap: 3rem;
+    font-size: 3rem;
 }
 
-.footer .facebook{
+.footer-top .facebook {
     color: #1877F2;
 }
 
-.footer .facebook :hover{
+.footer-top .facebook:hover {
     text-shadow: 0 0 6px rgba(24, 119, 242, 0.5);
 }
 
-.footer .instagram{
+.footer-top .instagram {
     color: #E4405F;
 }
 
-.footer .instagram:hover{
-        text-shadow: 0 0 6px rgba(228, 64, 95, 0.4);
+.footer-top .instagram:hover {
+    text-shadow: 0 0 6px rgba(228, 64, 95, 0.4);
 }
 
-.footer .youtube{
-    color: #EE1D52;
+.footer-top .youtube {
+    color: #FF0000;
 }
 
-.footer .youtube:hover {
+.footer-top .youtube:hover {
     text-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
-.footer .tiktok:hover{
+.footer-top .tiktok {
+    color: #000;
+}
+
+.footer-top .tiktok:hover {
     text-shadow: -2px 2px 0 #EE1D52, 2px -2px 0 #69C9D0;
 }
 
@@ -523,13 +522,13 @@ address,
 .customer {
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 2rem;
     align-items: center;
 }
 
 .account h3,
 .policies h3,
-.customer h3{
+.customer h3 {
     font-size: 2.5rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -537,17 +536,838 @@ address,
 
 .account a,
 .policies a,
-.customer a{
+.customer a {
     text-decoration: none;
     color: #000;
     font-weight: 300;
 }
 
-footer{
-    color: #fff;
-    background-color: #000;
+.footer-bottom {
     text-align: center;
     padding: 4rem 0;
     font-size: 2rem;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.15);
+    background-color: #000;
+    color: #ffff;
 }
 
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2.8rem;
+    color: #A32F20;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+/* ===== MOBILE (up to 768px) ===== */
+@media (max-width: 768px) {
+
+    /* ----------Mobile Header ---------- */
+    .header {
+        position: relative;
+        padding: 1.2rem 2rem;
+        z-index: 100;
+    }
+
+    .brand-name {
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .header span {
+        font-size: 1.1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        font-size: 1.8rem;
+        background: #fff;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
+
+        /* closed state */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1rem);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    .nav-list.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .nav-link {
+        padding: 1.6rem 2rem;
+        border-bottom: 0.1rem solid #eee;
+        /* closed state */
+        opacity: 0;
+        transform: translateY(-0.8rem);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+ }
+        
+    .nav-list.open .nav-link {
+        opacity: 1;
+        transform: translateY(0);
+    }  
+        
+    .nav-list.open .nav-link:nth-child(1) {
+        transition-delay: 0.05s;
+    }
+        
+    .nav-list.open .nav-link:nth-child(2) {
+       transition-delay: 0.1s;
+    }
+        
+    .nav-list.open .nav-link:nth-child(3) {
+       transition-delay: 0.15s;
+    }
+        
+    .nav-list.open .nav-link:nth-child(4) {
+       transition-delay: 0.2s;
+    }
+        
+    .nav-list.open .nav-link:nth-child(5) {
+       transition-delay: 0.25s;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    /* ----------Mobile Hero ---------- */
+    .hero {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-header {
+        font-size: 3.4rem;
+    }
+
+    .hero-paragraph {
+        font-size: 1.7rem;
+        margin: 1.5rem 0 2.5rem;
+    }
+
+    .hero-paragraph br {
+        display: none;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .browse-products,
+    .contact-us {
+        justify-content: center;
+        padding: 1.6rem 2rem;
+    }
+
+    .hero-right img {
+        width: 100%;
+        max-height: 28vh;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    /* ----------Mobile Features strip ---------- */
+    .testimonials {
+        width: 92%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        padding: 2.5rem 2rem;
+        transform: none;
+        margin: 2rem auto;
+    }
+
+    .testimonials h3 {
+        font-size: 1.6rem;
+    }
+
+    .testimonials span {
+        font-size: 1.3rem;
+    }
+
+    .icons {
+        font-size: 3.5rem;
+        margin-right: 1.5rem;
+        width: 4.5rem;
+        text-align: center;
+    }
+
+    /* ----------Mobile Categories ---------- */
+    .products {
+        padding: 2rem 1.6rem;
+    }
+
+    .products .category {
+        font-size: 2.2rem;
+        gap: 1.5rem;
+    }
+
+    .products>.category::before,
+    .products>.category::after {
+        width: 4rem;
+    }
+
+    .products p {
+        font-size: 1.4rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .product-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .product-images img {
+        width: 100%;
+        height: 13rem;
+        object-fit: cover;
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+    }
+
+    .product-images img:hover {
+        transform: none;
+    }
+
+    .product-images h3 {
+        font-size: 1.4rem;
+        margin: 1.2rem 0 1.5rem;
+    }
+
+    .more {
+        font-size: 1.6rem;
+        padding-bottom: 3rem;
+    }
+
+    .more a {
+        display: inline-block;
+        padding: 1.4rem 2rem;
+    }
+
+    /* ---------- Who we serve Mobile ---------- */
+    .about {
+        padding: 3rem 1.6rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about>.top>.about-text {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .about>.down {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem 1.5rem;
+    }
+
+    .home,
+    .restaurants,
+    .hotels,
+    .catering,
+    .corporate {
+        width: 46%;
+        gap: 1rem;
+    }
+
+    .down img {
+        width: 11rem;
+        height: 11rem;
+        object-fit: cover;
+    }
+
+    .down h4 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .down p {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    /* ---------- Mobile CTA ---------- */
+    .cta {
+        flex-direction: column;
+        height: auto;
+        clip-path: none;
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+
+    .cta-text {
+        order: -1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cta-text h2 {
+        font-size: 2.6rem;
+        line-height: 1.3;
+        letter-spacing: 0.1rem;
+    }
+
+    .cta-text p {
+        font-size: 1.5rem;
+        padding: 1.5rem 0 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-images {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .cta-images img {
+        position: static;
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .p6 {
+        display: none;
+        /* keeps the grid even: 6 images = 2 rows of 3 */
+    }
+
+    /* ---------- Mobile Footer ---------- */
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 2rem;
+        padding: 4rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-contact {
+        grid-column: 1 / -1;
+    }
+
+    .footer-top address,
+    .footer-top p {
+        font-size: 1.5rem;
+    }
+
+    .footer-top .social {
+        gap: 2.5rem;
+        font-size: 2.6rem;
+    }
+
+    .account,
+    .policies,
+    .customer {
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+
+    .account h3,
+    .policies h3,
+    .customer h3 {
+        font-size: 1.7rem;
+    }
+
+    .footer-bottom {
+        font-size: 1.3rem;
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* ===== TABLET (769px to 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* ---------- Tablet Header ---------- */
+    .header {
+        padding: 1.4rem 3rem;
+    }
+
+    .brand-name {
+        font-size: 3rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .header span {
+        font-size: 1.3rem;
+    }
+
+    .nav-list {
+        font-size: 1.8rem;
+        gap: 3rem;
+    }
+
+    /* ---------- Tablet Hero ---------- */
+    .hero {
+        padding: 4rem 3rem;
+        gap: 2rem;
+    }
+
+    .hero-header {
+        font-size: 4.2rem;
+    }
+
+    .hero-paragraph {
+        font-size: 2rem;
+        margin: 1.5rem 0 2.5rem;
+    }
+
+    .hero-btns {
+        gap: 2rem;
+        font-size: 1.3rem;
+        flex-wrap: wrap;
+    }
+
+    .browse-products {
+        padding: 1.6rem 2.2rem;
+    }
+
+    .contact-us {
+        padding: 1.4rem 2.2rem;
+    }
+
+    .hero-right img {
+        width: 100%;
+        max-height: 40vh;
+    }
+
+    /* ---------- Tablet Features strip ---------- */
+    .testimonials {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 2rem;
+        justify-items: start;
+        padding: 3rem;
+    }
+
+    .testimonials h3 {
+        font-size: 1.6rem;
+    }
+
+    .testimonials span {
+        font-size: 1.3rem;
+    }
+
+    .icons {
+        font-size: 4rem;
+        margin-right: 1.5rem;
+        width: 5rem;
+        text-align: center;
+    }
+
+    /* ---------- Tablet Categories ---------- */
+    .products {
+        padding: 2rem 3rem;
+    }
+
+    .products>.category {
+        font-size: 2.6rem;
+    }
+
+    .products>.category::before,
+    .products>.category::after {
+        width: 6rem;
+    }
+
+    .product-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .product-images img {
+        width: 100%;
+        height: 18rem;
+        object-fit: cover;
+    }
+
+    .product-images img:hover {
+        transform: scale(1.05);
+    }
+
+    .product-images h3 {
+        font-size: 1.6rem;
+        margin: 2rem 0 3rem;
+    }
+
+    .more {
+        font-size: 2rem;
+    }
+
+    /* ---------- Tablet Who we serve ---------- */
+    .about {
+        padding: 4rem 3rem;
+    }
+
+    .about h2 {
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .about>.top>.about-text {
+        font-size: 2rem;
+    }
+
+    .about>.down {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem 2rem;
+    }
+
+    .home,
+    .restaurants,
+    .hotels,
+    .catering,
+    .corporate {
+        width: 30%;
+    }
+
+    .down img {
+        width: 13rem;
+        height: 13rem;
+        object-fit: cover;
+    }
+
+    .down h4 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .down p {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    /* ---------- Tablet CTA ---------- */
+    .cta {
+        flex-direction: column;
+        height: auto;
+        clip-path: none;
+        padding: 5rem 4rem;
+        gap: 4rem;
+    }
+
+    .cta-text {
+        order: -1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cta-text h2 {
+        font-size: 4rem;
+        line-height: 1.3;
+        letter-spacing: 0.2rem;
+    }
+
+    .cta-text p {
+        font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+        font-size: 2rem;
+        gap: 2rem;
+    }
+
+    .cta-images {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .cta-images img {
+        position: static;
+        width: 100%;
+        height: 14rem;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    }
+
+    .p6 {
+        display: none;
+        /* keeps the grid even: 6 images = 2 rows of 3 */
+    }
+
+    /* ---------- Tablet Footer ---------- */
+    .footer-top {
+        padding: 6rem 3rem;
+        gap: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-top .brand-name {
+        font-size: 2.6rem;
+    }
+
+    .footer-top h2 span {
+        font-size: 1.4rem;
+    }
+
+    .footer-top address,
+    .footer-top p {
+        font-size: 1.5rem;
+    }
+
+    .footer-top .social {
+        gap: 2rem;
+        font-size: 2.6rem;
+    }
+
+    .account h3,
+    .policies h3,
+    .customer h3 {
+        font-size: 2rem;
+    }
+
+    .account,
+    .policies,
+    .customer {
+        gap: 1.5rem;
+    }
+
+    .footer-bottom {
+        font-size: 1.6rem;
+        padding: 3rem 0;
+    }
+}
+
+/* ===== LARGE TABLET / SMALL LAPTOP (1025px to 1280px) ===== */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* ---------- Header ---------- */
+    .header {
+        padding: 1.4rem 4rem;
+    }
+
+    .brand-name {
+        font-size: 3.4rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .header span {
+        font-size: 1.5rem;
+    }
+
+    .nav-list {
+        font-size: 2rem;
+        gap: 4rem;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+        padding: 5rem 4rem;
+    }
+
+    .hero-header {
+        font-size: 5rem;
+    }
+
+    .hero-paragraph {
+        font-size: 2.4rem;
+    }
+
+    .hero-btns {
+        gap: 3rem;
+    }
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    /* ---------- Features strip ---------- */
+    .testimonials {
+        width: 90%;
+        padding: 3rem 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .testimonials h3 {
+        font-size: 1.6rem;
+    }
+
+    .testimonials span {
+        font-size: 1.3rem;
+    }
+
+    .icons {
+        font-size: 4rem;
+        margin-right: 1.5rem;
+    }
+
+    /* ---------- Categories ---------- */
+    .products {
+        padding: 2rem 4rem;
+    }
+
+    .products>.category {
+        font-size: 2.8rem;
+    }
+
+    .product-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .product-images img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    .product-images img:hover {
+        transform: scale(1.05);
+    }
+
+    .more {
+        font-size: 2.2rem;
+    }
+
+    /* ---------- Who we serve ---------- */
+    .about {
+        padding: 5rem 4rem;
+    }
+
+    .about h2 {
+        font-size: 4.5rem;
+    }
+
+    .about>.top>.about-text {
+        font-size: 2.2rem;
+    }
+
+    .about>.down {
+        gap: 2rem;
+    }
+
+    .down img {
+        width: 13rem;
+        height: 13rem;
+        object-fit: cover;
+    }
+
+    .down h4 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .down p {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    /* ---------- CTA (stacked, the collage is too wide for half the screen) ---------- */
+    .cta {
+        flex-direction: column;
+        height: auto;
+        clip-path: none;
+        padding: 6rem 5rem;
+        gap: 4rem;
+    }
+
+    .cta-text {
+        order: -1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cta-text h2 {
+        font-size: 4.5rem;
+        line-height: 1.3;
+        letter-spacing: 0.3rem;
+    }
+
+    .cta-text p {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        font-size: 2.2rem;
+    }
+
+    .cta-images {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .cta-images img {
+        position: static;
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    }
+
+    .p6 {
+        display: none;
+        /* keeps the grid even: 6 images = 2 rows of 3 */
+    }
+
+    /* ---------- Footer ---------- */
+    .footer-top {
+        padding: 8rem 4rem;
+        gap: 3rem;
+    }
+
+    .footer-top .brand-name {
+        font-size: 3rem;
+    }
+
+    .account h3,
+    .policies h3,
+    .customer h3 {
+        font-size: 2.2rem;
+    }
+}
